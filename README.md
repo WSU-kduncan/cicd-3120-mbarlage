@@ -7,7 +7,8 @@ Project Overview:
 Run Project Locally
 1. How I Installed Docker + Dependencies: 
 ```
-I installed Docker by following the documentation provided in this link: https://docs.docker.com/engine/install/ubuntu/. 
+I installed Docker by following the documentation provided in this link: 
+https://docs.docker.com/engine/install/ubuntu/. 
 Dependencies = WSL2
 ```
 2. How to build the container from the Dockerfile: 
