@@ -6,7 +6,9 @@ Project Overview
 Project Overview
 ```
 Run Project Locally
-1. how you installed docker + dependencies (WSL2, for example)
-2. how to build the container from the Dockerfile
-3. how to run the container
-4. how to view the project running in the container (open a browser...go to ip and port...)
+1. How I Installed Docker + Dependencies: WSL2
+2. How to build the container from the Dockerfile:
+3. How to run the container
+4. How to view the project running in the container (open a browser...go to ip and port...)
+
+**Part 2 - GitHub Actions & DockerHub
