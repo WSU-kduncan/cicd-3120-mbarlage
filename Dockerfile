@@ -3,7 +3,7 @@ FROM nginx
 
 
 # Copy folder contents into container
-COPY index.html /ceg3120/cicd-3120-mbarlage
+COPY /home/mjbarlage/ceg3120/cicd-3120-mbarlage /usr/share/nginx/html
 
 # Commands to run when container starts 
 CMD [""]
