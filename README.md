@@ -11,4 +11,4 @@ Run Project Locally
 3. How to run the container
 4. How to view the project running in the container (open a browser...go to ip and port...)
 
-**Part 2 - GitHub Actions & DockerHub
+**Part 2 - GitHub Actions & DockerHub**
