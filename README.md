@@ -19,5 +19,8 @@ $ docker run -d --name project5 -p 8080:80 nginx
 Where project5 is the container name and nginx is the base image.
 ```
 4. How to view the project running in the container (open a browser...go to ip and port...)
+```
+http://my_ip:8080
+```
 
 **Part 2 - GitHub Actions & DockerHub**
