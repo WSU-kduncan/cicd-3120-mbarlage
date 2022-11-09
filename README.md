@@ -19,7 +19,7 @@ sudo docker build -f Dockerfile -t project5 .
 ```
 $ sudo docker run --name project5container -p 8080:80 project5
 
-Where project5 is the container name and nginx is the base image.
+Where project5container is the container name and project5 is the base image.
 ```
 4. How to view the project running in the container (open a browser...go to ip and port...)
 ```
