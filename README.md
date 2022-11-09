@@ -17,7 +17,7 @@ sudo docker build -f Dockerfile -t project5 .
 ```
 3. How to run the container:
 ```
-$ sudo docker run -d --name project5container -p 8080:80 project5
+$ sudo docker run --name project5container -p 8080:80 project5
 
 Where project5 is the container name and nginx is the base image.
 ```
