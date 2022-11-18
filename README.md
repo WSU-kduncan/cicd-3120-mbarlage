@@ -54,3 +54,6 @@ your repo and add a description if necessary, and select private or public.
 - Behavior of GitHub workflow
   - what does it do and when
   - what variables in workflow are custom to your project
+  ```
+  DOCKER_HUB_REPO: cicd-3120-mbarlage
+  ```
