@@ -40,6 +40,11 @@ Once you are signed in to DockerHub online, navigate to Repositories -> Create R
 your repo and add a description if necessary, and select private or public.
 ```
 - How to authenticate with DockerHub via CLI using Dockerhub credentials
+```
+docker login -u your_username
+
+You will then be prompted to enter your password. If successful, it will say Login Succeeded
+```
   - what credentials would you recommend providing?
 - How to push container to Dockerhub
 
@@ -53,7 +58,13 @@ your repo and add a description if necessary, and select private or public.
   ```
 - Behavior of GitHub workflow
   - what does it do and when
+  ```
+  A Github workflow performs an action whenever it is told to. In our case, we are creating a workflow 
+  for building and puhsing an image to Docker. It will do this everytime we make a commit to Github.
+  ```
   - what variables in workflow are custom to your project
   ```
   DOCKER_HUB_REPO: cicd-3120-mbarlage
+  DOCKER_TOKEN
+  DOCKER_USERNAME
   ```
