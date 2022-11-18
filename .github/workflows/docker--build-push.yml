@@ -10,7 +10,7 @@ name: Docker-Login-Build-Push
 on:
   # triggers on push to master branch
   push:
-  branches: [main]
+  branches: [master]
 # variables used in this workflow
 env:
   # variable holding my repo folder name (using DockerHub is assumed)
