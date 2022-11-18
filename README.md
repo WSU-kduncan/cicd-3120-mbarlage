@@ -44,7 +44,7 @@ your repo and add a description if necessary, and select private or public.
 
 4. Configuring GitHub Secrets
 ```
-I set two secrets inside of Actions Secrets found in in the Settings of your repository. 
+I set two secrets inside of Actions Secrets found in in the Settings of my repository: 
 DOCKER_USERNAME and DOCKER_TOKEN that contain login credentials for Docker.
 ```
 
