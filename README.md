@@ -45,8 +45,16 @@ docker login -u your_username
 
 You will then be prompted to enter your password. If successful, it will say Login Succeeded
 ```
-  - what credentials would you recommend providing?
+- what credentials would you recommend providing?
+```
+I would rather provide an access token to log in than a password. It doesn't hold any information 
+about the user.
+```
 - How to push container to Dockerhub
+```
+The manual way on the command line to push an image is docker push [OPTIONS] NAME[:TAG] format. Once I 
+had my workflow configured correctly, it will push a new image to docker hub every time I do a git push. 
+```
 
 # GitHub Actions
 
@@ -60,7 +68,7 @@ You will then be prompted to enter your password. If successful, it will say Log
   - what does it do and when
   ```
   A Github workflow performs an action whenever it is told to. In our case, we are creating a workflow 
-  for building and puhsing an image to Docker. It will do this everytime we make a commit to Github.
+  for building and pushing an image to Docker. It will do this everytime we make a push to Github.
   ```
   - what variables in workflow are custom to your project
   ```
