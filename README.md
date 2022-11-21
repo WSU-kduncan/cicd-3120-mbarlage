@@ -48,12 +48,14 @@ You will then be prompted to enter your password. If successful, it will say Log
 - what credentials would you recommend providing?
 ```
 I would rather provide an access token to log in than a password. It doesn't hold any information 
-about the user.
+about the user. Also, we have more control over access tokens in our account settings, in which they
+can be easily removed. Lastly, they are a lot stronger and harder to guess than a normal password usually. 
 ```
 - How to push container to Dockerhub
 ```
-The manual way on the command line to push an image is docker push [OPTIONS] NAME[:TAG] format. Once I 
-had my workflow configured correctly, it will push a new image to docker hub every time I do a git push. 
+The manual way on the command line to push an image is docker push [OPTIONS] NAME[:TAG] format. You
+can also do this by configuring a workflow, in which mine is located in this repo. It does this by logging 
+in to my Docker hub with the credentials I set in my repo's secrets. 
 ```
 
 # GitHub Actions
