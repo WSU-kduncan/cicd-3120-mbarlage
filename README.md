@@ -81,6 +81,16 @@ in to my Docker hub with the credentials I set in my repo's secrets.
 # Deployment
 
 - Description of container restart script
+```
+A comntainer restart script trashes the old version and pulls the latest image to run an updated version. 
+In this order:
+docker stop name
+docker rm name
+docker pull mbarlage/cicd-3120-mbarlage:latest
+sudo docker run -d -p 8080:80 --name name mbarlage/cicd-3120-mbarlage
+
+I left out the output helper commands
+```
 - Setting up a webhook on the server
   - How you created you own listener
   - How you installed the [webhook on GitHub](https://github.com/adnanh/webhook)
