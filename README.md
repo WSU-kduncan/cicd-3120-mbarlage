@@ -78,3 +78,12 @@ in to my Docker hub with the credentials I set in my repo's secrets.
   DOCKER_TOKEN
   DOCKER_USERNAME
   ```
+# Deployment
+
+- Description of container restart script
+- Setting up a webhook on the server
+  - How you created you own listener
+  - How you installed the [webhook on GitHub](https://github.com/adnanh/webhook)
+  - How to keep the webhook running if the instance is on
+- Description of Webhook task definition file
+- Steps to set up a notifier in GitHub or DockerHub
