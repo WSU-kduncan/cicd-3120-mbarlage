@@ -45,8 +45,18 @@ docker login -u your_username
 
 You will then be prompted to enter your password. If successful, it will say Login Succeeded
 ```
-  - what credentials would you recommend providing?
+- what credentials would you recommend providing?
+```
+I would rather provide an access token to log in than a password. It doesn't hold any information 
+about the user. Also, we have more control over access tokens in our account settings, in which they
+can be easily removed. Lastly, they are a lot stronger and harder to guess than a normal password usually. 
+```
 - How to push container to Dockerhub
+```
+The manual way on the command line to push an image is docker push [OPTIONS] NAME[:TAG] format. You
+can also do this by configuring a workflow, in which mine is located in this repo. It does this by logging 
+in to my Docker hub with the credentials I set in my repo's secrets. 
+```
 
 # GitHub Actions
 
@@ -60,7 +70,7 @@ You will then be prompted to enter your password. If successful, it will say Log
   - what does it do and when
   ```
   A Github workflow performs an action whenever it is told to. In our case, we are creating a workflow 
-  for building and puhsing an image to Docker. It will do this everytime we make a commit to Github.
+  for building and pushing an image to Docker. It will do this everytime we make a push to Github.
   ```
   - what variables in workflow are custom to your project
   ```
@@ -68,3 +78,22 @@ You will then be prompted to enter your password. If successful, it will say Log
   DOCKER_TOKEN
   DOCKER_USERNAME
   ```
+# Deployment
+
+- Description of container restart script
+```
+A comntainer restart script trashes the old version and pulls the latest image to run an updated version. 
+In this order:
+docker stop name
+docker rm name
+docker pull mbarlage/cicd-3120-mbarlage:latest
+sudo docker run -d -p 8080:80 --name name mbarlage/cicd-3120-mbarlage
+
+I left out the output helper commands
+```
+- Setting up a webhook on the server
+  - How you created you own listener
+  - How you installed the [webhook on GitHub](https://github.com/adnanh/webhook)
+  - How to keep the webhook running if the instance is on
+- Description of Webhook task definition file
+- Steps to set up a notifier in GitHub or DockerHub
