@@ -106,6 +106,28 @@ I left out the output helper commands
   go install github.com/adnanh/webhook@latest
   ```
   - How to keep the webhook running if the instance is on
+  ```
+  cd /etc/systemd/system
+  
+  vim webhook.service:
+  After=multi-user.target
+
+  [Service]
+  ExecStart=/home/ubuntu/go/bin/webhook -hooks /home/ubuntu/hooks.json
+  Type=simple
+
+  [Install]
+  WantedBy=multi-user.target
+  
+  sudo systemctl daemon-reload
+  sudo systemctl enable webhook.service:
+  Created symlink /etc/systemd/system/multi-user.target.wants/webhook.service → /etc/systemd/system/webhook.service.
+  
+  sudo systemctl start webhook.service
+  sudo systemctl start webhook.service - to check if it is running
+  
+  Should now be able to exit the instance and keep the webook running as long as the instance is turned on
+  ```
 - Description of Webhook task definition file
 ```
 [
