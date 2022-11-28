@@ -93,7 +93,21 @@ I left out the output helper commands
 ```
 - Setting up a webhook on the server
   - How you created you own listener
+  ```
+  Following the lectures,
+  
+  /home/ubuntu/go/bin/webhook -hooks /home/ubuntu/cicd-3120-mbarlage/hooks.json -verbose
+  ```
   - How you installed the [webhook on GitHub](https://github.com/adnanh/webhook)
+  ```
+  go install github.com/adnanh/webhook@latest
+  ```
   - How to keep the webhook running if the instance is on
 - Description of Webhook task definition file
 - Steps to set up a notifier in GitHub or DockerHub
+```
+In Docker Hub, I went to my repository -> Webhooks and created a new webhook
+called Deploy a new image with the following URL:
+
+http://44.196.218.155:9000/hooks/mbarlage
+```
