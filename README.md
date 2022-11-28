@@ -97,6 +97,9 @@ I left out the output helper commands
   Following the lectures,
   
   /home/ubuntu/go/bin/webhook -hooks /home/ubuntu/cicd-3120-mbarlage/hooks.json -verbose
+  
+  you can check if it is working by opening a new window and using the command:
+  sudo lsof | grep LISTEN
   ```
   - How you installed the [webhook on GitHub](https://github.com/adnanh/webhook)
   ```
