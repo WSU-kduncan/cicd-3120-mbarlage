@@ -1,8 +1,8 @@
 
 # Stop the old
-docker stop project5container
+docker stop proj5-site
 docker ps -a
-docker rm project5container
+docker rm proj5-site
 docker ps -a
 
 
