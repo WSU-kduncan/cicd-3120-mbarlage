@@ -1,6 +1,6 @@
 [
   {
-     "id": "pizza",
+     "id": "mbarlage",
      "execute-command": "/home/ubuntu/refresh.sh",
      "command-working-directory": "/var/webhook"
   }
