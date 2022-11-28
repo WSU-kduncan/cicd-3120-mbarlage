@@ -107,10 +107,25 @@ I left out the output helper commands
   ```
   - How to keep the webhook running if the instance is on
 - Description of Webhook task definition file
+```
+[
+  {
+     "id": "mbarlage",
+     "execute-command": "/home/ubuntu/refresh.sh",
+     "command-working-directory": "/var/webhook"
+  }
+]
+
+id: hook name
+execute-command: the script the hook is going to execute and where it is located
+
+```
 - Steps to set up a notifier in GitHub or DockerHub
 ```
 In Docker Hub, I went to my repository -> Webhooks and created a new webhook
 called Deploy a new image with the following URL:
 
 http://44.196.218.155:9000/hooks/mbarlage
+
+44.196.218.155 - EIP of AWS instance
 ```
