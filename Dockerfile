@@ -2,7 +2,7 @@
 FROM nginx
 
 # Copy folder contents into container
-COPY website/index.html /usr/share/nginx/html
+COPY website/ /usr/share/nginx/html
 
 # Port that the container will use
 EXPOSE 80
