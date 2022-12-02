@@ -151,3 +151,10 @@ http://44.196.218.155:9000/hooks/mbarlage
 
 44.196.218.155 - EIP of AWS instance
 ```
+# Diagramming
+```
+https://lucid.app/lucidchart/6db2bfb7-8569-422e-91d6-d79d81954da3/edit?viewport_loc=-63%2C296%2C2161%2C1040%2C0_0&
+invitationId=inv_db69f260-8b43-4565-9e94-ec45a3c3a188
+
+Image is also in repo
+```
